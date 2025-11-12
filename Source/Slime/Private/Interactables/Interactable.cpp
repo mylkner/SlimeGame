@@ -1,0 +1,39 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "Slime/Public/Interactables/Interactable.h"
+
+#include "Components/SphereComponent.h"
+
+
+AInteractable::AInteractable()
+{
+	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
+	StaticMesh->SetupAttachment(RootComponent);
+
+	ContactSphere = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere"));
+	ContactSphere->SetupAttachment(RootComponent);
+	ContactSphere->SetSphereRadius(ContactSphereRadius);
+	ContactSphere->SetCollisionProfileName("OverlapAllDynamic");
+}
+
+void AInteractable::BeginPlay()
+{
+	Super::BeginPlay();
+
+	ContactSphere->OnComponentBeginOverlap.AddDynamic(this, &AInteractable::OnSphereOverlap);
+	ContactSphere->OnComponentEndOverlap.AddDynamic(this, &AInteractable::OnSphereEndOverlap);
+}
+
+void AInteractable::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Overlapping Sphere"));
+}
+
+void AInteractable::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Overlapping Sphere End"));
+}
+
