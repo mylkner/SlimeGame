@@ -3,22 +3,26 @@
 
 #include "Slime/Public/Interactables/Buffs/Buff.h"
 
+#include "Components/SphereComponent.h"
+#include "Slime/Public/Characters/SlimeCharacter.h"
+
 
 ABuff::ABuff()
 {
-	PrimaryActorTick.bCanEverTick = true;
+	ContactSphereRadius = 50.f;
+	ContactSphere->SetSphereRadius(ContactSphereRadius);
 }
 
-// Called when the game starts or when spawned
 void ABuff::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-// Called every frame
-void ABuff::Tick(float DeltaTime)
+void ABuff::Interact(ASlimeCharacter* Slime)
 {
-	Super::Tick(DeltaTime);
+	UE_LOG(LogTemp, Warning, TEXT("I'm a buff"));
 }
+
+
 

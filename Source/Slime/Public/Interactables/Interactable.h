@@ -6,9 +6,10 @@
 #include "GameFramework/Actor.h"
 #include "Interactable.generated.h"
 
+class ASlimeCharacter;
 class USphereComponent;
 
-UCLASS()
+UCLASS(Abstract)
 class SLIME_API AInteractable : public AActor
 {
 	GENERATED_BODY()
@@ -27,6 +28,9 @@ protected:
 	UFUNCTION()
 	virtual void OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
+	UFUNCTION(BlueprintCallable, Category="Interactable")
+	virtual void Interact(ASlimeCharacter* Slime);
+	
 	// components
 	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<UStaticMeshComponent> StaticMesh;

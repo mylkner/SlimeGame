@@ -4,6 +4,7 @@
 #include "Slime/Public/Interactables/Interactable.h"
 
 #include "Components/SphereComponent.h"
+#include "Slime/Public/Characters/SlimeCharacter.h"
 
 
 AInteractable::AInteractable()
@@ -28,12 +29,20 @@ void AInteractable::BeginPlay()
 void AInteractable::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Overlapping Sphere"));
+	if (ASlimeCharacter* Slime = Cast<ASlimeCharacter>(OtherActor))
+	{
+		Interact(Slime);
+	}
 }
 
 void AInteractable::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Overlapping Sphere End"));
+}
+
+void AInteractable::Interact(ASlimeCharacter* Slime)
+{
+	checkf(false, TEXT("Interact not implemented in derived class!"));
 }
 
