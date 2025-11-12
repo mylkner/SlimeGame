@@ -14,6 +14,7 @@ class UInputAction;
 class USpringArmComponent;
 class UCameraComponent;
 
+
 UCLASS()
 class SLIME_API ASlimeCharacter : public ACharacter
 {

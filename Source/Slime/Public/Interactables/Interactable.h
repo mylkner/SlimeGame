@@ -28,6 +28,7 @@ protected:
 	UFUNCTION()
 	virtual void OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
+	// event
 	UFUNCTION(BlueprintCallable, Category="Interactable")
 	virtual void Interact(ASlimeCharacter* Slime);
 	

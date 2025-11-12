@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "BuffTypes.h"
 #include "Slime/Public/Interactables/Interactable.h"
 #include "Buff.generated.h"
 
@@ -17,4 +18,14 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void Interact(ASlimeCharacter* Slime) override;
+
+	// properties
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Buffs")
+	EBuffTypes BuffType;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Buffs")
+	float Multiplier = 1.1f;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Buffs")
+	float Time = 15.0f;
 };
