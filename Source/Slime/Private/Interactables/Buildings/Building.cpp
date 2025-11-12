@@ -3,9 +3,6 @@
 
 #include "Slime/Public/Interactables/Buildings/Building.h"
 
-#include "Slime/Public/Characters/SlimeCharacter.h"
-
-
 ABuilding::ABuilding()
 {
 }
@@ -17,6 +14,6 @@ void ABuilding::BeginPlay()
 
 void ABuilding::Interact(ASlimeCharacter* Slime)
 {
-	UE_LOG(LogTemp, Warning, TEXT("I'm a buff"));
+	UE_LOG(LogTemp, Warning, TEXT("I'm a building"));
 }
 

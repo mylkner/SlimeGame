@@ -4,7 +4,6 @@
 #include "Slime/Public/Interactables/Buffs/Buff.h"
 
 #include "Components/SphereComponent.h"
-#include "Slime/Public/Characters/SlimeCharacter.h"
 
 
 ABuff::ABuff()
