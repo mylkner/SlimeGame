@@ -1,0 +1,1173 @@
+<DatasmithUnrealScene>
+	<Version>0.24</Version>
+	<SDKVersion>5.7.0-47537391</SDKVersion>
+	<Host>Autodesk 3dsmax 27.0.4918Arnold</Host>
+	<Application Vendor="Autodesk" ProductName="3dsmax" ProductVersion="27.0.4918"/>
+	<ResourcePath>C:/Users/DFlin/Desktop/game design repo/SlimeGame/Content/Houses</ResourcePath>
+	<User ID="f4edd29e40647c1158f055860705045f" OS="Windows 8"/>
+	<Geolocation/>
+	<StaticMesh name="4" label="Box001">
+		<file path="House1_Assets/4.udsmesh"/>
+		<Size a="22665.53125" x="56.301186" y="56.301186" z="25.4"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="b1864c881c1bb6c40750b59892dcbde9"/>
+		<Material id="1" name="Material__37"/>
+		<Material id="5" name="Material__39"/>
+		<Material id="21" name="Material__25"/>
+		<Material id="67" name="Material__38"/>
+	</StaticMesh>
+	<StaticMesh name="5" label="Pyramid001">
+		<file path="House1_Assets/5.udsmesh"/>
+		<Size a="24254.912109" x="50.799999" y="81.960007" z="50.799999"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="268770a33144ee789131bf3aa5f17e7b"/>
+		<Material id="1" name="Material__37"/>
+		<Material id="16" name="Material__37"/>
+	</StaticMesh>
+	<StaticMesh name="19" label="Box002">
+		<file path="House1_Assets/19.udsmesh"/>
+		<Size a="59444.226562" x="91.162872" y="91.162872" z="41.127674"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="01f8a59c118ace7d4b06c4164e386363"/>
+		<Material id="1" name="Material__37"/>
+		<Material id="5" name="Material__39"/>
+		<Material id="8" name="Material__40"/>
+		<Material id="21" name="Material__25"/>
+		<Material id="67" name="Material__38"/>
+	</StaticMesh>
+	<StaticMesh name="20" label="Pyramid002">
+		<file path="House1_Assets/20.udsmesh"/>
+		<Size a="63605.28125" x="82.255341" y="132.70961" z="82.255356"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="b20adf5dec616c95664a78a526a47584"/>
+		<Material id="1" name="Material__37"/>
+		<Material id="16" name="Material__37"/>
+	</StaticMesh>
+	<StaticMesh name="29" label="Box007">
+		<file path="House1_Assets/29.udsmesh"/>
+		<Size a="3039.577148" x="25.43428" y="23.869085" z="3.130371"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="589b0b59e27776da8c94af63651add84"/>
+		<Material id="1" name="Material__44"/>
+	</StaticMesh>
+	<StaticMesh name="25" label="Pyramid003">
+		<file path="House1_Assets/25.udsmesh"/>
+		<Size a="63656.3125" x="82.255341" y="132.70961" z="82.533783"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="fb6ac1dc7b5566830509df57a48d945d"/>
+		<Material id="7" name="Material__43"/>
+	</StaticMesh>
+	<StaticMesh name="28" label="Box006">
+		<file path="House1_Assets/28.udsmesh"/>
+		<Size a="3039.577148" x="25.43428" y="23.869085" z="3.130371"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="dfaab689a26f9f1e75cd822bd81db376"/>
+		<Material id="1" name="Material__44"/>
+	</StaticMesh>
+	<StaticMesh name="27" label="Box005">
+		<file path="House1_Assets/27.udsmesh"/>
+		<Size a="3039.575439" x="25.43428" y="23.869076" z="3.130371"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="cb4f8a74f7830f8802590633c3a5ecbb"/>
+		<Material id="1" name="Material__44"/>
+	</StaticMesh>
+	<StaticMesh name="26" label="Box004">
+		<file path="House1_Assets/26.udsmesh"/>
+		<Size a="3039.577148" x="25.43428" y="23.869085" z="3.130371"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="49d9687ca61ddce747f86e037edf632a"/>
+		<Material id="1" name="Material__44"/>
+	</StaticMesh>
+	<StaticMesh name="24" label="Box003">
+		<file path="House1_Assets/24.udsmesh"/>
+		<Size a="59444.226562" x="91.162872" y="91.162872" z="41.127674"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="d0c0e5fbd0afbc47fdc7163bfb98b134"/>
+		<Material id="1" name="Material__37"/>
+		<Material id="5" name="Material__39"/>
+		<Material id="9" name="Material__41"/>
+		<Material id="21" name="Material__25"/>
+		<Material id="67" name="Material__38"/>
+	</StaticMesh>
+	<StaticMesh name="32" label="Box008">
+		<file path="House1_Assets/32.udsmesh"/>
+		<Size a="3039.577148" x="25.43428" y="23.869085" z="3.130371"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="da21fd51a1a1e79fe8d5741498e05121"/>
+		<Material id="10" name="Material__44"/>
+	</StaticMesh>
+	<StaticMesh name="33" label="Pyramid004">
+		<file path="House1_Assets/33.udsmesh"/>
+		<Size a="63656.3125" x="82.255341" y="132.70961" z="82.533783"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="2ce97a22bd6e74dbc2fe9f3f9d6d509f"/>
+		<Material id="69" name="Material__47"/>
+	</StaticMesh>
+	<StaticMesh name="34" label="Box009">
+		<file path="House1_Assets/34.udsmesh"/>
+		<Size a="3039.577148" x="25.43428" y="23.869085" z="3.130371"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="81f98c17b46d48ae9a8cbae7915c5f28"/>
+		<Material id="10" name="Material__44"/>
+	</StaticMesh>
+	<StaticMesh name="35" label="Box010">
+		<file path="House1_Assets/35.udsmesh"/>
+		<Size a="3039.577148" x="25.43428" y="23.869085" z="3.130371"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="1193c067396f91ae1486b7a9e47878e9"/>
+		<Material id="10" name="Material__44"/>
+	</StaticMesh>
+	<StaticMesh name="36" label="Box011">
+		<file path="House1_Assets/36.udsmesh"/>
+		<Size a="3039.577148" x="25.43428" y="23.869085" z="3.130371"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="0be5ce4843d45707ee8291794ee7b0bb"/>
+		<Material id="10" name="Material__44"/>
+	</StaticMesh>
+	<StaticMesh name="37" label="Box012">
+		<file path="House1_Assets/37.udsmesh"/>
+		<Size a="59444.226562" x="91.162872" y="91.162872" z="41.127674"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="b22c53c74007f85938e3a6847c635718"/>
+		<Material id="1" name="Material__37"/>
+		<Material id="5" name="Material__39"/>
+		<Material id="9" name="Material__41"/>
+		<Material id="21" name="Material__25"/>
+		<Material id="67" name="Material__38"/>
+	</StaticMesh>
+	<StaticMesh name="40" label="Box015">
+		<file path="House1_Assets/40.udsmesh"/>
+		<Size a="13507.333008" x="23.243233" y="17.009523" z="74.152199"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="56f04e299a18648a601849be44abeec4"/>
+		<Material id="11" name="Material__45"/>
+	</StaticMesh>
+	<StaticMesh name="39" label="Box014">
+		<file path="House1_Assets/39.udsmesh"/>
+		<Size a="13507.333008" x="23.243233" y="17.009525" z="74.152199"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="f2aca007ae8656a3caad4d6087185516"/>
+		<Material id="11" name="Material__45"/>
+	</StaticMesh>
+	<StaticMesh name="38" label="Box013">
+		<file path="House1_Assets/38.udsmesh"/>
+		<Size a="43907.089844" x="57.934216" y="159.304932" z="8.074858"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="67ae1f1c1cfa4419d066362064ed7c6e"/>
+		<Material id="11" name="Material__45"/>
+	</StaticMesh>
+	<Actor name="41" label="house1" layer="0" mobility="Static">
+		<Transform tx="1.482119" ty="-70.689888" tz="27.987221" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+		<tag value="Max.superclassof: helper" />
+		<tag value="Max.classof: Luminaire" />
+		<tag value="Max.handle: 41" />
+		<tag value="Max.isGroupHead: true" />
+		<tag value="Max.isGroupMember: false" />
+		<tag value="Max.parent.handle: 0" />
+		<children visible="true">
+			<Actor name="6" label="house" layer="0" mobility="Static">
+				<Transform tx="1.482119" ty="-70.689888" tz="27.987221" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+				<tag value="Max.superclassof: helper" />
+				<tag value="Max.classof: Dummy" />
+				<tag value="Max.handle: 6" />
+				<tag value="Max.isGroupHead: true" />
+				<tag value="Max.isGroupMember: true" />
+				<tag value="Max.parent.handle: 41" />
+				<children visible="true">
+					<ActorMesh name="4" label="Box001" layer="0" mobility="Static">
+						<mesh name="4"/>
+						<Transform tx="0.0" ty="-71.696983" tz="0.0" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 4" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 6" />
+					</ActorMesh>
+					<ActorMesh name="5" label="Pyramid001" layer="0" mobility="Static">
+						<mesh name="5"/>
+						<Transform tx="1.482119" ty="-70.689888" tz="23.239937" sx="1.257304" sy="1.0" sz="0.64438" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 5" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 6" />
+					</ActorMesh>
+				</children>
+			</Actor>
+		</children>
+	</Actor>
+	<Actor name="42" label="house2" layer="0" mobility="Static">
+		<Transform tx="1.482119" ty="74.551727" tz="27.987221" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+		<tag value="Max.superclassof: helper" />
+		<tag value="Max.classof: Luminaire" />
+		<tag value="Max.handle: 42" />
+		<tag value="Max.isGroupHead: true" />
+		<tag value="Max.isGroupMember: false" />
+		<tag value="Max.parent.handle: 0" />
+		<children visible="true">
+			<Actor name="18" label="house1" layer="0" mobility="Static">
+				<Transform tx="1.482119" ty="74.551727" tz="27.987221" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+				<tag value="Max.superclassof: helper" />
+				<tag value="Max.classof: Dummy" />
+				<tag value="Max.handle: 18" />
+				<tag value="Max.isGroupHead: true" />
+				<tag value="Max.isGroupMember: true" />
+				<tag value="Max.parent.handle: 42" />
+				<children visible="true">
+					<ActorMesh name="19" label="Box002" layer="0" mobility="Static">
+						<mesh name="19"/>
+						<Transform tx="0.0" ty="73.544632" tz="0.0" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 19" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 18" />
+					</ActorMesh>
+					<ActorMesh name="20" label="Pyramid002" layer="0" mobility="Static">
+						<mesh name="20"/>
+						<Transform tx="1.482119" ty="74.551727" tz="23.239937" sx="1.257304" sy="1.0" sz="0.64438" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 20" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 18" />
+					</ActorMesh>
+				</children>
+			</Actor>
+		</children>
+	</Actor>
+	<Actor name="43" label="house3" layer="0" mobility="Static">
+		<Transform tx="-129.046417" ty="62.034351" tz="65.596855" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+		<tag value="Max.superclassof: helper" />
+		<tag value="Max.classof: Luminaire" />
+		<tag value="Max.handle: 43" />
+		<tag value="Max.isGroupHead: true" />
+		<tag value="Max.isGroupMember: false" />
+		<tag value="Max.parent.handle: 0" />
+		<children visible="true">
+			<Actor name="30" label="House2" layer="0" mobility="Static">
+				<Transform tx="-129.046417" ty="62.034351" tz="65.596855" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+				<tag value="Max.superclassof: helper" />
+				<tag value="Max.classof: Dummy" />
+				<tag value="Max.handle: 30" />
+				<tag value="Max.isGroupHead: true" />
+				<tag value="Max.isGroupMember: true" />
+				<tag value="Max.parent.handle: 43" />
+				<children visible="true">
+					<ActorMesh name="29" label="Box007" layer="0" mobility="Static">
+						<mesh name="29"/>
+						<Transform tx="-67.580681" ty="142.799637" tz="-0.000015" sx="0.588464" sy="0.588464" sz="17.853378" qx="-1.0" qy="0.0" qz="0.0" qw="-0.0" qhex64="E6FFFFFFFFFFEFBF00000000000000000000000000000080F0FFFF3F2D4474BE"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 29" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 30" />
+					</ActorMesh>
+					<ActorMesh name="25" label="Pyramid003" layer="0" mobility="Static">
+						<mesh name="25"/>
+						<Transform tx="-129.38063" ty="61.593391" tz="33.242172" sx="1.804703" sy="1.435375" sz="0.924927" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 25" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 30" />
+					</ActorMesh>
+					<ActorMesh name="28" label="Box006" layer="0" mobility="Static">
+						<mesh name="28"/>
+						<Transform tx="-67.580681" ty="-23.198439" tz="-0.000015" sx="0.588464" sy="0.588464" sz="17.853378" qx="-1.0" qy="0.0" qz="0.0" qw="-0.0" qhex64="E6FFFFFFFFFFEFBF00000000000000000000000000000080F0FFFF3F2D4474BE"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 28" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 30" />
+					</ActorMesh>
+					<ActorMesh name="27" label="Box005" layer="0" mobility="Static">
+						<mesh name="27"/>
+						<Transform tx="-189.459747" ty="-23.198439" tz="-0.000015" sx="0.588464" sy="0.588464" sz="17.853378" qx="-1.0" qy="0.0" qz="0.0" qw="-0.0" qhex64="E6FFFFFFFFFFEFBF00000000000000000000000000000080F0FFFF3F2D4474BE"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 27" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 30" />
+					</ActorMesh>
+					<ActorMesh name="26" label="Box004" layer="0" mobility="Static">
+						<mesh name="26"/>
+						<Transform tx="-189.459747" ty="144.227798" tz="-0.000015" sx="0.588464" sy="0.588464" sz="17.853378" qx="-1.0" qy="0.0" qz="0.0" qw="-0.0" qhex64="E6FFFFFFFFFFEFBF00000000000000000000000000000080F0FFFF3F2D4474BE"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 26" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 30" />
+					</ActorMesh>
+					<ActorMesh name="24" label="Box003" layer="0" mobility="Static">
+						<mesh name="24"/>
+						<Transform tx="-131.508041" ty="60.147831" tz="-0.115846" sx="1.435375" sy="1.435375" sz="1.435375" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 24" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 30" />
+					</ActorMesh>
+				</children>
+			</Actor>
+		</children>
+	</Actor>
+	<Actor name="44" label="house4" layer="0" mobility="Static">
+		<Transform tx="-164.745071" ty="-301.001129" tz="99.292" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+		<tag value="Max.superclassof: helper" />
+		<tag value="Max.classof: Luminaire" />
+		<tag value="Max.handle: 44" />
+		<tag value="Max.isGroupHead: true" />
+		<tag value="Max.isGroupMember: false" />
+		<tag value="Max.parent.handle: 0" />
+		<children visible="true">
+			<Actor name="31" label="House3" layer="0" mobility="Static">
+				<Transform tx="-164.745071" ty="-301.001129" tz="99.292" sx="1.551475" sy="1.551475" sz="1.551475" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+				<tag value="Max.superclassof: helper" />
+				<tag value="Max.classof: Dummy" />
+				<tag value="Max.handle: 31" />
+				<tag value="Max.isGroupHead: true" />
+				<tag value="Max.isGroupMember: true" />
+				<tag value="Max.parent.handle: 44" />
+				<children visible="true">
+					<ActorMesh name="32" label="Box008" layer="0" mobility="Static">
+						<mesh name="32"/>
+						<Transform tx="-69.382507" ty="-175.695786" tz="-2.479907" sx="0.912988" sy="0.912988" sz="27.699072" qx="-1.0" qy="0.0" qz="0.0" qw="-0.0" qhex64="E6FFFFFFFFFFEFBF00000000000000000000000000000080F0FFFF3F2D4474BE"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 32" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 31" />
+					</ActorMesh>
+					<ActorMesh name="33" label="Pyramid004" layer="0" mobility="Static">
+						<mesh name="33"/>
+						<Transform tx="-165.263596" ty="-301.685272" tz="49.094521" sx="2.799951" sy="2.226948" sz="1.435001" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 33" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 31" />
+					</ActorMesh>
+					<ActorMesh name="34" label="Box009" layer="0" mobility="Static">
+						<mesh name="34"/>
+						<Transform tx="-69.382507" ty="-433.237671" tz="-2.479907" sx="0.912988" sy="0.912988" sz="27.699072" qx="-1.0" qy="0.0" qz="0.0" qw="-0.0" qhex64="E6FFFFFFFFFFEFBF00000000000000000000000000000080F0FFFF3F2D4474BE"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 34" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 31" />
+					</ActorMesh>
+					<ActorMesh name="35" label="Box010" layer="0" mobility="Static">
+						<mesh name="35"/>
+						<Transform tx="-258.474854" ty="-433.237671" tz="-2.479907" sx="0.912988" sy="0.912988" sz="27.699072" qx="-1.0" qy="0.0" qz="0.0" qw="-0.0" qhex64="E6FFFFFFFFFFEFBF00000000000000000000000000000080F0FFFF3F2D4474BE"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 35" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 31" />
+					</ActorMesh>
+					<ActorMesh name="36" label="Box011" layer="0" mobility="Static">
+						<mesh name="36"/>
+						<Transform tx="-258.474854" ty="-173.480026" tz="-2.479907" sx="0.912988" sy="0.912988" sz="27.699072" qx="-1.0" qy="0.0" qz="0.0" qw="-0.0" qhex64="E6FFFFFFFFFFEFBF00000000000000000000000000000080F0FFFF3F2D4474BE"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 36" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 31" />
+					</ActorMesh>
+					<ActorMesh name="37" label="Box012" layer="0" mobility="Static">
+						<mesh name="37"/>
+						<Transform tx="-168.564209" ty="-303.928009" tz="-2.659615" sx="2.226948" sy="2.226948" sz="2.226948" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 37" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 31" />
+					</ActorMesh>
+					<ActorMesh name="40" label="Box015" layer="0" mobility="Static">
+						<mesh name="40"/>
+						<Transform tx="-286.752502" ty="-379.786469" tz="0.00001" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 40" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 31" />
+					</ActorMesh>
+					<ActorMesh name="39" label="Box014" layer="0" mobility="Static">
+						<mesh name="39"/>
+						<Transform tx="-291.399994" ty="-233.301041" tz="0.00001" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 39" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 31" />
+					</ActorMesh>
+					<ActorMesh name="38" label="Box013" layer="0" mobility="Static">
+						<mesh name="38"/>
+						<Transform tx="-283.69397" ty="-308.08139" tz="74.573158" sx="1.0" sy="1.219593" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+						<tag value="Max.superclassof: GeometryClass" />
+						<tag value="Max.classof: Editable_mesh" />
+						<tag value="Max.handle: 38" />
+						<tag value="Max.isGroupHead: false" />
+						<tag value="Max.isGroupMember: true" />
+						<tag value="Max.parent.handle: 31" />
+					</ActorMesh>
+				</children>
+			</Actor>
+		</children>
+	</Actor>
+	<Texture name="Masonry_Unit_Masonry_Brick_Modular_Running_Grey_2_2_Tex" label="Masonry_Unit_Masonry_Brick_Modular_Running_Grey_2_2_Tex" texturemode="5" texturefilter="3" textureaddressx="0" textureaddressy="0" rgbcurve="-1.000000" srgb="1" file="House1_Assets/Masonry.Unit Masonry.Brick.Modular.Running.Grey.jpg">
+		<Hash value="b0c2e4e0ef3b1f1186284a4a577bbfaf"/>
+	</Texture>
+	<Texture name="Masonry_Unit_Masonry_Brick_Modular_Running_Grey_bump_2_2_Tex" label="Masonry_Unit_Masonry_Brick_Modular_Running_Grey_bump_2_2_Tex" texturemode="5" texturefilter="3" textureaddressx="0" textureaddressy="0" rgbcurve="-1.000000" srgb="2" file="House1_Assets/Masonry.Unit Masonry.Brick.Modular.Running.Grey.bump.jpg">
+		<Hash value="dbfacc9f6708b0b693e3f353bc268206"/>
+	</Texture>
+	<Texture name="Simple_Stone_Mtl_Granite_bump_2_2_Tex" label="Simple_Stone_Mtl_Granite_bump_2_2_Tex" texturemode="5" texturefilter="3" textureaddressx="0" textureaddressy="0" rgbcurve="-1.000000" srgb="1" file="House1_Assets/Simple_Stone_Mtl_Granite_bump.jpg">
+		<Hash value="33cb9656e25d390c501bcddffbcbca23"/>
+	</Texture>
+	<Texture name="Finishes_Flooring_Wood_Plank_Beech_2_2_Tex" label="Finishes_Flooring_Wood_Plank_Beech_2_2_Tex" texturemode="5" texturefilter="3" textureaddressx="0" textureaddressy="0" rgbcurve="-1.000000" srgb="2" file="House1_Assets/Finishes.Flooring.Wood.Plank.Beech.jpg">
+		<Hash value="9798179ca17fc0ea156f82df016c3c6b"/>
+	</Texture>
+	<UEPbrMaterial name="Material__37">
+		<Expressions>
+			<Texture Name="" PathName="Masonry_Unit_Masonry_Brick_Modular_Running_Grey_2_2_Tex">
+				<Input Name="Coordinates" expression="2" OutputIndex="0"/>
+			</Texture>
+			<TextureCoordinate Index="0" UTiling="2.5" VTiling="1.428571"/>
+			<FunctionCall Function="/DatasmithContent/Materials/UVEdit.UVEdit">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="7" OutputIndex="0"/>
+				<Input Name="2" expression="5" OutputIndex="0"/>
+				<Input Name="3" expression="3" OutputIndex="0"/>
+				<Input Name="4" expression="4" OutputIndex="0"/>
+				<Input Name="7" expression="6" OutputIndex="0"/>
+			</FunctionCall>
+			<Bool Name="Mirror_U" constant="false"/>
+			<Bool Name="Mirror_V" constant="false"/>
+			<Color Name="UV_Tiling" constant="(R=1.000000,G=1.000000,B=0.000000,A=1.000000)"/>
+			<Color Name="UV_Offset" constant="(R=0.000000,G=-0.428571,B=0.000000,A=1.000000)"/>
+			<Color Name="Tiling_Pivot" constant="(R=0.500000,G=0.500000,B=0.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="0" OutputIndex="0"/>
+				<Input Name="1" expression="9" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Output_Level" constant="0.5"/>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="0"/>
+				<Input Name="1" expression="10" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Texture Name="" PathName="Masonry_Unit_Masonry_Brick_Modular_Running_Grey_bump_2_2_Tex">
+			</Texture>
+			<Desaturation Name="">
+				<Input Name="0" expression="14" OutputIndex="0"/>
+			</Desaturation>
+			<Scalar Name="" constant="0.816185"/>
+			<TextureObjectParameter Name="Bump_Map">
+				<KeyValueProperty name="Texture" type="Texture" val="Masonry_Unit_Masonry_Brick_Modular_Running_Grey_bump_2_2_Tex"/>
+			</TextureObjectParameter>
+			<FunctionCall Function="/Engine/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.NormalFromHeightmap">
+				<Input Name="0" expression="17" OutputIndex="0"/>
+				<Input Name="2" expression="19" OutputIndex="0"/>
+			</FunctionCall>
+			<Scalar Name="" constant="0.001"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="8" OutputIndex="0"/>
+		<Input Name="Metallic" expression="13" OutputIndex="0"/>
+		<Input Name="Roughness" expression="16" OutputIndex="0"/>
+		<Input Name="Specular" expression="15" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="12" OutputIndex="0"/>
+		<Input Name="Normal" expression="18" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__39">
+		<Expressions>
+			<Scalar Name="" constant="0.7"/>
+			<Color Name="Diffuse_Color" constant="(R=0.688198,G=0.690754,B=0.426753,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="4" OutputIndex="0"/>
+				<Input Name="1" expression="3" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="6" OutputIndex="0"/>
+		<Input Name="Roughness" expression="7" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="5" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__43">
+		<Expressions>
+			<Scalar Name="" constant="0.7"/>
+			<Color Name="Diffuse_Color" constant="(R=0.204154,G=0.316470,B=0.188345,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="4" OutputIndex="0"/>
+				<Input Name="1" expression="3" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="6" OutputIndex="0"/>
+		<Input Name="Roughness" expression="7" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="5" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__40">
+		<Expressions>
+			<Scalar Name="" constant="0.7"/>
+			<Color Name="Diffuse_Color" constant="(R=0.201439,G=0.201439,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="4" OutputIndex="0"/>
+				<Input Name="1" expression="3" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="6" OutputIndex="0"/>
+		<Input Name="Roughness" expression="7" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="5" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__41">
+		<Expressions>
+			<Scalar Name="" constant="0.75"/>
+			<Color Name="Diffuse_Color" constant="(R=0.265615,G=0.081598,B=0.064793,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="4" OutputIndex="0"/>
+				<Input Name="1" expression="3" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+			<Color Name="Clear_Coat" constant="(R=0.807843,G=0.807843,B=0.807843,A=1.000000)"/>
+			<Scalar Name="" constant="0.1"/>
+			<Multiply Name="">
+				<Input Name="0" expression="8" OutputIndex="0"/>
+				<Input Name="1" expression="9" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="1.5"/>
+			<Scalar Name="" constant="0.0"/>
+			<Scalar Name="" constant="0.0"/>
+			<Scalar Name="" constant="1.0"/>
+			<Fresnel Name="">
+				<Input Name="0" expression="14" OutputIndex="0"/>
+				<Input Name="1" expression="13" OutputIndex="0"/>
+			</Fresnel>
+			<OneMinus Name="">
+				<Input Name="0" expression="15" OutputIndex="0"/>
+			</OneMinus>
+			<Multiply Name="">
+				<Input Name="0" expression="16" OutputIndex="0"/>
+				<Input Name="1" expression="16" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="0"/>
+				<Input Name="1" expression="11" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="12" OutputIndex="0"/>
+				<Input Name="1" expression="12" OutputIndex="0"/>
+			</Multiply>
+			<Add Name="">
+				<Input Name="0" expression="18" OutputIndex="0"/>
+				<Input Name="1" expression="19" OutputIndex="0"/>
+			</Add>
+			<Scalar Name="" constant="2.0"/>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="0"/>
+				<Input Name="1" expression="21" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="22" OutputIndex="0"/>
+				<Input Name="1" expression="16" OutputIndex="0"/>
+			</Multiply>
+			<Subtract Name="">
+				<Input Name="0" expression="20" OutputIndex="0"/>
+				<Input Name="1" expression="23" OutputIndex="0"/>
+			</Subtract>
+			<Add Name="">
+				<Input Name="0" expression="24" OutputIndex="0"/>
+				<Input Name="1" expression="17" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="20" OutputIndex="0"/>
+				<Input Name="1" expression="23" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="26" OutputIndex="0"/>
+				<Input Name="1" expression="17" OutputIndex="0"/>
+			</Add>
+			<Divide Name="">
+				<Input Name="0" expression="25" OutputIndex="0"/>
+				<Input Name="1" expression="27" OutputIndex="0"/>
+			</Divide>
+			<Multiply Name="">
+				<Input Name="0" expression="20" OutputIndex="0"/>
+				<Input Name="1" expression="17" OutputIndex="0"/>
+			</Multiply>
+			<Subtract Name="">
+				<Input Name="0" expression="29" OutputIndex="0"/>
+				<Input Name="1" expression="23" OutputIndex="0"/>
+			</Subtract>
+			<Scalar Name="" constant="1.0"/>
+			<Add Name="">
+				<Input Name="0" expression="30" OutputIndex="0"/>
+				<Input Name="1" expression="31" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="29" OutputIndex="0"/>
+				<Input Name="1" expression="23" OutputIndex="0"/>
+			</Add>
+			<Scalar Name="" constant="1.0"/>
+			<Add Name="">
+				<Input Name="0" expression="33" OutputIndex="0"/>
+				<Input Name="1" expression="34" OutputIndex="0"/>
+			</Add>
+			<Divide Name="">
+				<Input Name="0" expression="32" OutputIndex="0"/>
+				<Input Name="1" expression="35" OutputIndex="0"/>
+			</Divide>
+			<Scalar Name="" constant="0.5"/>
+			<Add Name="">
+				<Input Name="0" expression="36" OutputIndex="0"/>
+				<Input Name="1" expression="28" OutputIndex="0"/>
+			</Add>
+			<Multiply Name="">
+				<Input Name="0" expression="38" OutputIndex="0"/>
+				<Input Name="1" expression="37" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.5"/>
+			<Power Name="">
+				<Input Name="0" expression="39" OutputIndex="0"/>
+				<Input Name="1" expression="40" OutputIndex="0"/>
+			</Power>
+			<LinearInterpolate Name="">
+				<Input Name="0" expression="10" OutputIndex="0"/>
+				<Input Name="1" expression="8" OutputIndex="0"/>
+				<Input Name="2" expression="41" OutputIndex="0"/>
+			</LinearInterpolate>
+			<Scalar Name="Clear_Coat_Roughness" constant="0.07"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="6" OutputIndex="0"/>
+		<Input Name="Roughness" expression="7" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="5" OutputIndex="0"/>
+		<Input Name="ClearCoat" expression="42" OutputIndex="0"/>
+		<Input Name="ClearCoatRoughness" expression="43" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+		<ShadingModel value="ClearCoat"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__44">
+		<Expressions>
+			<Scalar Name="" constant="0.75"/>
+			<Texture Name="" PathName="Simple_Stone_Mtl_Granite_bump_2_2_Tex">
+				<Input Name="Coordinates" expression="3" OutputIndex="0"/>
+			</Texture>
+			<TextureCoordinate Index="0" UTiling="1.428572" VTiling="3.333334"/>
+			<FunctionCall Function="/DatasmithContent/Materials/UVEdit.UVEdit">
+				<Input Name="0" expression="2" OutputIndex="0"/>
+				<Input Name="1" expression="8" OutputIndex="0"/>
+				<Input Name="2" expression="6" OutputIndex="0"/>
+				<Input Name="3" expression="4" OutputIndex="0"/>
+				<Input Name="4" expression="5" OutputIndex="0"/>
+				<Input Name="7" expression="7" OutputIndex="0"/>
+			</FunctionCall>
+			<Bool Name="Mirror_U" constant="false"/>
+			<Bool Name="Mirror_V" constant="false"/>
+			<Color Name="UV_Tiling" constant="(R=1.000000,G=1.000000,B=0.000000,A=1.000000)"/>
+			<Color Name="UV_Offset" constant="(R=0.000000,G=-0.333334,B=0.000000,A=1.000000)"/>
+			<Color Name="Tiling_Pivot" constant="(R=0.500000,G=0.500000,B=0.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="0"/>
+				<Input Name="1" expression="10" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.25"/>
+			<Scalar Name="" constant="0.48"/>
+			<Color Name="Clear_Coat" constant="(R=0.807843,G=0.807843,B=0.807843,A=1.000000)"/>
+			<Scalar Name="" constant="0.1"/>
+			<Multiply Name="">
+				<Input Name="0" expression="15" OutputIndex="0"/>
+				<Input Name="1" expression="16" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="1.5"/>
+			<Scalar Name="" constant="0.0"/>
+			<Scalar Name="" constant="0.0"/>
+			<Scalar Name="" constant="1.0"/>
+			<Fresnel Name="">
+				<Input Name="0" expression="21" OutputIndex="0"/>
+				<Input Name="1" expression="20" OutputIndex="0"/>
+			</Fresnel>
+			<OneMinus Name="">
+				<Input Name="0" expression="22" OutputIndex="0"/>
+			</OneMinus>
+			<Multiply Name="">
+				<Input Name="0" expression="23" OutputIndex="0"/>
+				<Input Name="1" expression="23" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="18" OutputIndex="0"/>
+				<Input Name="1" expression="18" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="19" OutputIndex="0"/>
+				<Input Name="1" expression="19" OutputIndex="0"/>
+			</Multiply>
+			<Add Name="">
+				<Input Name="0" expression="25" OutputIndex="0"/>
+				<Input Name="1" expression="26" OutputIndex="0"/>
+			</Add>
+			<Scalar Name="" constant="2.0"/>
+			<Multiply Name="">
+				<Input Name="0" expression="18" OutputIndex="0"/>
+				<Input Name="1" expression="28" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="29" OutputIndex="0"/>
+				<Input Name="1" expression="23" OutputIndex="0"/>
+			</Multiply>
+			<Subtract Name="">
+				<Input Name="0" expression="27" OutputIndex="0"/>
+				<Input Name="1" expression="30" OutputIndex="0"/>
+			</Subtract>
+			<Add Name="">
+				<Input Name="0" expression="31" OutputIndex="0"/>
+				<Input Name="1" expression="24" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="27" OutputIndex="0"/>
+				<Input Name="1" expression="30" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="33" OutputIndex="0"/>
+				<Input Name="1" expression="24" OutputIndex="0"/>
+			</Add>
+			<Divide Name="">
+				<Input Name="0" expression="32" OutputIndex="0"/>
+				<Input Name="1" expression="34" OutputIndex="0"/>
+			</Divide>
+			<Multiply Name="">
+				<Input Name="0" expression="27" OutputIndex="0"/>
+				<Input Name="1" expression="24" OutputIndex="0"/>
+			</Multiply>
+			<Subtract Name="">
+				<Input Name="0" expression="36" OutputIndex="0"/>
+				<Input Name="1" expression="30" OutputIndex="0"/>
+			</Subtract>
+			<Scalar Name="" constant="1.0"/>
+			<Add Name="">
+				<Input Name="0" expression="37" OutputIndex="0"/>
+				<Input Name="1" expression="38" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="36" OutputIndex="0"/>
+				<Input Name="1" expression="30" OutputIndex="0"/>
+			</Add>
+			<Scalar Name="" constant="1.0"/>
+			<Add Name="">
+				<Input Name="0" expression="40" OutputIndex="0"/>
+				<Input Name="1" expression="41" OutputIndex="0"/>
+			</Add>
+			<Divide Name="">
+				<Input Name="0" expression="39" OutputIndex="0"/>
+				<Input Name="1" expression="42" OutputIndex="0"/>
+			</Divide>
+			<Scalar Name="" constant="0.5"/>
+			<Add Name="">
+				<Input Name="0" expression="43" OutputIndex="0"/>
+				<Input Name="1" expression="35" OutputIndex="0"/>
+			</Add>
+			<Multiply Name="">
+				<Input Name="0" expression="45" OutputIndex="0"/>
+				<Input Name="1" expression="44" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.5"/>
+			<Power Name="">
+				<Input Name="0" expression="46" OutputIndex="0"/>
+				<Input Name="1" expression="47" OutputIndex="0"/>
+			</Power>
+			<LinearInterpolate Name="">
+				<Input Name="0" expression="17" OutputIndex="0"/>
+				<Input Name="1" expression="15" OutputIndex="0"/>
+				<Input Name="2" expression="48" OutputIndex="0"/>
+			</LinearInterpolate>
+			<Scalar Name="Clear_Coat_Roughness" constant="0.07"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="9" OutputIndex="0"/>
+		<Input Name="Metallic" expression="13" OutputIndex="0"/>
+		<Input Name="Roughness" expression="14" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="12" OutputIndex="0"/>
+		<Input Name="ClearCoat" expression="49" OutputIndex="0"/>
+		<Input Name="ClearCoatRoughness" expression="50" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+		<ShadingModel value="ClearCoat"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__45">
+		<Expressions>
+			<Color Name="Diffuse_Color" constant="(R=0.639216,G=0.572549,B=0.423529,A=1.000000)"/>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="2" OutputIndex="0"/>
+				<Input Name="1" expression="1" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+			<TextureObjectParameter Name="Bump_Map">
+				<KeyValueProperty name="Texture" type="Texture" val="Finishes_Flooring_Wood_Plank_Beech_2_2_Tex"/>
+			</TextureObjectParameter>
+			<FunctionCall Function="/Engine/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.NormalFromHeightmap">
+				<Input Name="0" expression="6" OutputIndex="0"/>
+				<Input Name="2" expression="8" OutputIndex="0"/>
+			</FunctionCall>
+			<Scalar Name="" constant="0.001"/>
+			<Multiply Name="">
+				<Input Name="0" expression="7" OutputIndex="0"/>
+				<Input Name="1" expression="10" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Output_Level" constant="0.75"/>
+			<FunctionCall Function="/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.BreakOutFloat3Components">
+				<Input Name="0" expression="9" OutputIndex="0"/>
+			</FunctionCall>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="0"/>
+				<Input Name="1" expression="13" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Normal_Intensity" constant="0.3"/>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="1"/>
+				<Input Name="1" expression="13" OutputIndex="0"/>
+			</Multiply>
+			<AppendVector Name="">
+				<Input Name="0" expression="12" OutputIndex="0"/>
+				<Input Name="1" expression="14" OutputIndex="0"/>
+			</AppendVector>
+			<DotProduct Name="">
+				<Input Name="0" expression="15" OutputIndex="0"/>
+				<Input Name="1" expression="15" OutputIndex="0"/>
+			</DotProduct>
+			<OneMinus Name="">
+				<Input Name="0" expression="16" OutputIndex="0"/>
+			</OneMinus>
+			<Saturate Name="">
+				<Input Name="0" expression="17" OutputIndex="0"/>
+			</Saturate>
+			<SquareRoot Name="">
+				<Input Name="0" expression="18" OutputIndex="0"/>
+			</SquareRoot>
+			<FunctionCall Function="/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.MakeFloat3">
+				<Input Name="0" expression="12" OutputIndex="0"/>
+				<Input Name="1" expression="14" OutputIndex="0"/>
+				<Input Name="2" expression="19" OutputIndex="0"/>
+			</FunctionCall>
+		</Expressions>
+		<Input Name="BaseColor" expression="0" OutputIndex="0"/>
+		<Input Name="Metallic" expression="4" OutputIndex="0"/>
+		<Input Name="Roughness" expression="5" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="3" OutputIndex="0"/>
+		<Input Name="Normal" expression="20" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__25">
+		<Expressions>
+			<Color Name="Diffuse_Color" constant="(R=0.639216,G=0.572549,B=0.423529,A=1.000000)"/>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="2" OutputIndex="0"/>
+				<Input Name="1" expression="1" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+			<TextureObjectParameter Name="Bump_Map">
+				<KeyValueProperty name="Texture" type="Texture" val="Finishes_Flooring_Wood_Plank_Beech_2_2_Tex"/>
+			</TextureObjectParameter>
+			<FunctionCall Function="/Engine/Functions/Engine_MaterialFunctions03/Procedurals/NormalFromHeightmap.NormalFromHeightmap">
+				<Input Name="0" expression="6" OutputIndex="0"/>
+				<Input Name="2" expression="8" OutputIndex="0"/>
+			</FunctionCall>
+			<Scalar Name="" constant="0.001"/>
+			<Multiply Name="">
+				<Input Name="0" expression="7" OutputIndex="0"/>
+				<Input Name="1" expression="10" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Output_Level" constant="0.75"/>
+			<FunctionCall Function="/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.BreakOutFloat3Components">
+				<Input Name="0" expression="9" OutputIndex="0"/>
+			</FunctionCall>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="0"/>
+				<Input Name="1" expression="13" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Normal_Intensity" constant="0.3"/>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="1"/>
+				<Input Name="1" expression="13" OutputIndex="0"/>
+			</Multiply>
+			<AppendVector Name="">
+				<Input Name="0" expression="12" OutputIndex="0"/>
+				<Input Name="1" expression="14" OutputIndex="0"/>
+			</AppendVector>
+			<DotProduct Name="">
+				<Input Name="0" expression="15" OutputIndex="0"/>
+				<Input Name="1" expression="15" OutputIndex="0"/>
+			</DotProduct>
+			<OneMinus Name="">
+				<Input Name="0" expression="16" OutputIndex="0"/>
+			</OneMinus>
+			<Saturate Name="">
+				<Input Name="0" expression="17" OutputIndex="0"/>
+			</Saturate>
+			<SquareRoot Name="">
+				<Input Name="0" expression="18" OutputIndex="0"/>
+			</SquareRoot>
+			<FunctionCall Function="/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.MakeFloat3">
+				<Input Name="0" expression="12" OutputIndex="0"/>
+				<Input Name="1" expression="14" OutputIndex="0"/>
+				<Input Name="2" expression="19" OutputIndex="0"/>
+			</FunctionCall>
+		</Expressions>
+		<Input Name="BaseColor" expression="0" OutputIndex="0"/>
+		<Input Name="Metallic" expression="4" OutputIndex="0"/>
+		<Input Name="Roughness" expression="5" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="3" OutputIndex="0"/>
+		<Input Name="Normal" expression="20" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__38">
+		<Expressions>
+			<Scalar Name="" constant="0.61"/>
+			<Color Name="Diffuse_Color" constant="(R=0.417378,G=0.933295,B=0.980409,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Color Name="" constant="(R=0.395963,G=0.692936,B=0.830000,A=0.830000)"/>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="5" OutputIndex="0"/>
+				<Input Name="1" expression="4" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+			<Desaturation Name="">
+				<Input Name="0" expression="3" OutputIndex="0"/>
+			</Desaturation>
+			<OneMinus Name="">
+				<Input Name="0" expression="9" OutputIndex="0"/>
+			</OneMinus>
+			<Color Name="Clear_Coat" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Scalar Name="" constant="0.1"/>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="0"/>
+				<Input Name="1" expression="12" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="1.5"/>
+			<Scalar Name="" constant="0.0"/>
+			<Scalar Name="" constant="0.0"/>
+			<Scalar Name="" constant="1.0"/>
+			<Fresnel Name="">
+				<Input Name="0" expression="17" OutputIndex="0"/>
+				<Input Name="1" expression="16" OutputIndex="0"/>
+			</Fresnel>
+			<OneMinus Name="">
+				<Input Name="0" expression="18" OutputIndex="0"/>
+			</OneMinus>
+			<Multiply Name="">
+				<Input Name="0" expression="19" OutputIndex="0"/>
+				<Input Name="1" expression="19" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="14" OutputIndex="0"/>
+				<Input Name="1" expression="14" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="15" OutputIndex="0"/>
+				<Input Name="1" expression="15" OutputIndex="0"/>
+			</Multiply>
+			<Add Name="">
+				<Input Name="0" expression="21" OutputIndex="0"/>
+				<Input Name="1" expression="22" OutputIndex="0"/>
+			</Add>
+			<Scalar Name="" constant="2.0"/>
+			<Multiply Name="">
+				<Input Name="0" expression="14" OutputIndex="0"/>
+				<Input Name="1" expression="24" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="25" OutputIndex="0"/>
+				<Input Name="1" expression="19" OutputIndex="0"/>
+			</Multiply>
+			<Subtract Name="">
+				<Input Name="0" expression="23" OutputIndex="0"/>
+				<Input Name="1" expression="26" OutputIndex="0"/>
+			</Subtract>
+			<Add Name="">
+				<Input Name="0" expression="27" OutputIndex="0"/>
+				<Input Name="1" expression="20" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="23" OutputIndex="0"/>
+				<Input Name="1" expression="26" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="29" OutputIndex="0"/>
+				<Input Name="1" expression="20" OutputIndex="0"/>
+			</Add>
+			<Divide Name="">
+				<Input Name="0" expression="28" OutputIndex="0"/>
+				<Input Name="1" expression="30" OutputIndex="0"/>
+			</Divide>
+			<Multiply Name="">
+				<Input Name="0" expression="23" OutputIndex="0"/>
+				<Input Name="1" expression="20" OutputIndex="0"/>
+			</Multiply>
+			<Subtract Name="">
+				<Input Name="0" expression="32" OutputIndex="0"/>
+				<Input Name="1" expression="26" OutputIndex="0"/>
+			</Subtract>
+			<Scalar Name="" constant="1.0"/>
+			<Add Name="">
+				<Input Name="0" expression="33" OutputIndex="0"/>
+				<Input Name="1" expression="34" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="32" OutputIndex="0"/>
+				<Input Name="1" expression="26" OutputIndex="0"/>
+			</Add>
+			<Scalar Name="" constant="1.0"/>
+			<Add Name="">
+				<Input Name="0" expression="36" OutputIndex="0"/>
+				<Input Name="1" expression="37" OutputIndex="0"/>
+			</Add>
+			<Divide Name="">
+				<Input Name="0" expression="35" OutputIndex="0"/>
+				<Input Name="1" expression="38" OutputIndex="0"/>
+			</Divide>
+			<Scalar Name="" constant="0.5"/>
+			<Add Name="">
+				<Input Name="0" expression="39" OutputIndex="0"/>
+				<Input Name="1" expression="31" OutputIndex="0"/>
+			</Add>
+			<Multiply Name="">
+				<Input Name="0" expression="41" OutputIndex="0"/>
+				<Input Name="1" expression="40" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.5"/>
+			<Power Name="">
+				<Input Name="0" expression="42" OutputIndex="0"/>
+				<Input Name="1" expression="43" OutputIndex="0"/>
+			</Power>
+			<LinearInterpolate Name="">
+				<Input Name="0" expression="13" OutputIndex="0"/>
+				<Input Name="1" expression="11" OutputIndex="0"/>
+				<Input Name="2" expression="44" OutputIndex="0"/>
+			</LinearInterpolate>
+			<Scalar Name="Clear_Coat_Roughness" constant="0.0"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="7" OutputIndex="0"/>
+		<Input Name="Roughness" expression="8" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="6" OutputIndex="0"/>
+		<Input Name="Opacity" expression="10" OutputIndex="0"/>
+		<Input Name="ClearCoat" expression="45" OutputIndex="0"/>
+		<Input Name="ClearCoatRoughness" expression="46" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+		<ShadingModel value="ClearCoat"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__47">
+		<Expressions>
+			<Scalar Name="" constant="0.7"/>
+			<Color Name="Diffuse_Color" constant="(R=0.025187,G=0.025187,B=0.025187,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="4" OutputIndex="0"/>
+				<Input Name="1" expression="3" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="6" OutputIndex="0"/>
+		<Input Name="Roughness" expression="7" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="5" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<Export Duration="0"/>
+</DatasmithUnrealScene>
