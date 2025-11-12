@@ -4,15 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "Slime/Public/Interactables/Interactable.h"
-#include "Buff.generated.h"
+#include "Building.generated.h"
 
 UCLASS()
-class SLIME_API ABuff : public AInteractable
+class SLIME_API ABuilding : public AInteractable
 {
 	GENERATED_BODY()
 
 public:
-	ABuff();
+	ABuilding();
 
 protected:
 	virtual void BeginPlay() override;
