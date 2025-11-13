@@ -8,6 +8,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "Interactables/Buffs/BuffStruct.h"
 
 ASlimeCharacter::ASlimeCharacter()
 {
@@ -25,6 +26,15 @@ ASlimeCharacter::ASlimeCharacter()
 
 	ViewCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	ViewCamera->SetupAttachment(SpringArm);
+}
+
+void ASlimeCharacter::AddBuff(const FBuffStruct& Buff)
+{
+	CurrentBuffs.Add(Buff);
+	for (const FBuffStruct& Buff : CurrentBuffs)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("%hhd"), Buff.Type);
+	}
 }
 
 void ASlimeCharacter::BeginPlay()

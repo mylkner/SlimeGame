@@ -18,7 +18,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void Interact(ASlimeCharacter* Slime) override;
-
+	
 	// properties
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Buffs")
 	EBuffTypes BuffType;
@@ -27,5 +27,13 @@ protected:
 	float Multiplier = 1.1f;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Buffs")
-	float Time = 15.0f;
+	float Duration = 15.0f;
+
+private:
+	// remove/add from game
+	UFUNCTION()
+	void Remove();
+
+	UFUNCTION()
+	void Add(const FVector& NewLocation);
 };
