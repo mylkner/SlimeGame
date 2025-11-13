@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "SlimeCharacter.generated.h"
 
+enum class EBuffTypes : uint8;
 struct FBuffStruct;
 class USphereComponent;
 struct FInputActionValue;
@@ -14,7 +15,6 @@ class UInputComponent;
 class UInputAction;
 class USpringArmComponent;
 class UCameraComponent;
-
 
 UCLASS()
 class SLIME_API ASlimeCharacter : public ACharacter
@@ -31,8 +31,8 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
+	virtual void Tick(float DeltaTime) override;
 
 	// input handler fns
 	void Move(const FInputActionValue& Value);
@@ -54,14 +54,17 @@ public:
 private:
 	// components
 	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<UStaticMeshComponent> StaticMesh;
+	
+	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<USpringArmComponent> SpringArm = nullptr;
 
 	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<UCameraComponent> ViewCamera = nullptr;
 
 	// stats/multipliers
-	UPROPERTY(VisibleAnywhere)
-	float Size = 10.0f;
+	const float BaseSpeed = 700;
+	const float BaseJumpHeight = 500;
 
 	UPROPERTY(VisibleAnywhere)
 	float SpeedMultiplier = 1.0f;
@@ -70,8 +73,11 @@ private:
 	float JumpMultiplier = 1.0f;
 
 	UPROPERTY(VisibleAnywhere)
-	float SizeMultiplier = 1.0f;
+	float SizeMultiplier = 1.1f;
 
 	// buffs
 	TArray<FBuffStruct> CurrentBuffs = TArray<FBuffStruct>();
+
+	UFUNCTION()
+	void RemoveBuff(EBuffTypes BuffType);
 };

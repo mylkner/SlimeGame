@@ -20,13 +20,13 @@ protected:
 	virtual void Interact(ASlimeCharacter* Slime) override;
 	
 	// properties
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Buffs")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
 	EBuffTypes BuffType;
 	
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Buffs")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
 	float Multiplier = 1.1f;
 	
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Buffs")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
 	float Duration = 15.0f;
 
 private:

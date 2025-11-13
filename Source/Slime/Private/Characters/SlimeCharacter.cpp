@@ -19,6 +19,9 @@ ASlimeCharacter::ASlimeCharacter()
 	bUseControllerRotationRoll = false;
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 
+	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
+	StaticMesh->SetupAttachment(RootComponent);
+	
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(RootComponent);
 	SpringArm->TargetArmLength = 300;
@@ -26,15 +29,31 @@ ASlimeCharacter::ASlimeCharacter()
 
 	ViewCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	ViewCamera->SetupAttachment(SpringArm);
+
+	GetCharacterMovement()->MaxWalkSpeed = BaseSpeed;
+	GetCharacterMovement()->JumpZVelocity = BaseJumpHeight;
 }
 
 void ASlimeCharacter::AddBuff(const FBuffStruct& Buff)
 {
-	CurrentBuffs.Add(Buff);
-	for (const FBuffStruct& Buff : CurrentBuffs)
+	for (FBuffStruct& B : CurrentBuffs)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("%hhd"), Buff.Type);
+		if (B.Type == Buff.Type)
+		{
+			B.TimeRemaining = Buff.Duration;
+			return;
+		}
 	}
+	
+	switch (Buff.Type)
+	{
+		case EBuffTypes::Jump: GetCharacterMovement()->JumpZVelocity *= Buff.Multiplier; break;
+		case EBuffTypes::Speed: GetCharacterMovement()->MaxWalkSpeed *= Buff.Multiplier; break;
+		case EBuffTypes::Size: SetActorScale3D(FVector(SizeMultiplier, SizeMultiplier, SizeMultiplier));; break;
+	}
+	
+	CurrentBuffs.Add(Buff);
+	if (CurrentBuffs.Num() == 1) SetActorTickEnabled(true);
 }
 
 void ASlimeCharacter::BeginPlay()
@@ -50,11 +69,6 @@ void ASlimeCharacter::BeginPlay()
 	}
 }
 
-void ASlimeCharacter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-}
-
 void ASlimeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -64,6 +78,18 @@ void ASlimeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 		EnhancedInputComp->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ASlimeCharacter::Move);
 		EnhancedInputComp->BindAction(LookAction, ETriggerEvent::Triggered, this, &ASlimeCharacter::Look);
 		EnhancedInputComp->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ASlimeCharacter::Jump);
+	}
+}
+
+void ASlimeCharacter::Tick(const float DeltaTime)
+{
+	if (CurrentBuffs.Num() == 0) SetActorTickEnabled(false);
+
+	for (int i = CurrentBuffs.Num() - 1; i >= 0; i--)
+	{
+		CurrentBuffs[i].TimeRemaining -= DeltaTime;
+		if (CurrentBuffs[i].TimeRemaining <= 0)
+			RemoveBuff(CurrentBuffs[i].Type);
 	}
 }
 
@@ -84,5 +110,22 @@ void ASlimeCharacter::Look(const FInputActionValue& Value)
 	const FVector2D LookVector = Value.Get<FVector2D>();
 	AddControllerYawInput(LookVector.X);
 	AddControllerPitchInput(LookVector.Y);
+}
+
+void ASlimeCharacter::RemoveBuff(const EBuffTypes BuffType)
+{
+	for (int i = CurrentBuffs.Num() - 1; i >= 0; i--)
+	{
+		if (CurrentBuffs[i].Type == BuffType)
+		{
+			switch (BuffType)
+			{
+				case EBuffTypes::Jump: GetCharacterMovement()->JumpZVelocity /= CurrentBuffs[i].Multiplier; break;
+				case EBuffTypes::Speed: GetCharacterMovement()->MaxWalkSpeed /= CurrentBuffs[i].Multiplier; break;
+				case EBuffTypes::Size: SetActorScale3D(FVector(1, 1, 1));; break;
+			}
+			CurrentBuffs.RemoveAt(i);
+		}
+	}
 }
 

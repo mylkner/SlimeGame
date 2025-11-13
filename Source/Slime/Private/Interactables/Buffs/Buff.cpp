@@ -2,12 +2,16 @@
 
 
 #include "Slime/Public/Interactables/Buffs/Buff.h"
+
+#include "Components/SphereComponent.h"
 #include "Interactables/Buffs/BuffStruct.h"
 #include "Slime/Public/Characters/SlimeCharacter.h"
 
 ABuff::ABuff()
 {
 	BuffType = EBuffTypes::Speed;
+	StaticMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	ContactSphere->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 }
 
 void ABuff::BeginPlay()
@@ -33,13 +37,12 @@ void ABuff::Remove()
 {
 	SetActorEnableCollision(false);
 	SetActorHiddenInGame(true);
-	Add(FVector(0, 0, 0));
 }
 
 void ABuff::Add(const FVector& NewLocation )
 {
 	SetActorLocation(NewLocation);
-	//SetActorEnableCollision(true);
+	SetActorEnableCollision(true);
 	SetActorHiddenInGame(false);
 }
 
