@@ -9,6 +9,7 @@
 
 AInteractable::AInteractable()
 {
+	PrimaryActorTick.bCanEverTick = false;
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
@@ -25,7 +26,6 @@ void AInteractable::BeginPlay()
 	Super::BeginPlay();
 
 	ContactSphere->OnComponentBeginOverlap.AddDynamic(this, &AInteractable::OnSphereOverlap);
-	ContactSphere->OnComponentEndOverlap.AddDynamic(this, &AInteractable::OnSphereEndOverlap);
 }
 
 
@@ -38,14 +38,8 @@ void AInteractable::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AA
 	}
 }
 
-void AInteractable::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-	UE_LOG(LogTemp, Warning, TEXT("Overlapping Sphere End"));
-}
-
 void AInteractable::Interact(ASlimeCharacter* Slime)
 {
-	checkf(false, TEXT("Interact not implemented in derived class!"));
+	UE_LOG(LogTemp, Warning, TEXT("%s: Interact not implemented!!"), *GetName())
 }
 

@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "SlimeCharacter.generated.h"
 
+struct FBuffStruct;
 class USphereComponent;
 struct FInputActionValue;
 class UInputMappingContext;
@@ -22,6 +23,9 @@ class SLIME_API ASlimeCharacter : public ACharacter
 
 public:
 	ASlimeCharacter();
+
+	UFUNCTION()
+	void AddBuff(const FBuffStruct& Buff);
 
 protected:
 	virtual void BeginPlay() override;
@@ -67,4 +71,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 	float SizeMultiplier = 1.0f;
+
+	// buffs
+	TArray<FBuffStruct> CurrentBuffs = TArray<FBuffStruct>();
 };
