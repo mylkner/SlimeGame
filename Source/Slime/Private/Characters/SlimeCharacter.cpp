@@ -32,7 +32,8 @@ ASlimeCharacter::ASlimeCharacter()
 
 	GetCharacterMovement()->MaxWalkSpeed = BaseSpeed;
 	GetCharacterMovement()->JumpZVelocity = BaseJumpHeight;
-	SetActorScale3D(FVector(BaseSize, BaseSize, BaseSize));
+	Scale = BaseSize;
+	SetActorScale3D(FVector(Scale, Scale, Scale));
 }
 
 void ASlimeCharacter::AddBuff(const FBuffStruct& Buff)
@@ -55,8 +56,7 @@ void ASlimeCharacter::AddBuff(const FBuffStruct& Buff)
 		break;
 	case EBuffTypes::Size:
 		SizeMultiplier *= Buff.Multiplier;
-		const float Scale = BaseSize * SizeMultiplier;
-		SetActorScale3D(FVector(Scale, Scale, Scale));
+		Scale = BaseSize * SizeMultiplier;
 		break;
 	}
 	UE_LOG(LogTemp, Warning, TEXT("Buff added"));
@@ -66,9 +66,8 @@ void ASlimeCharacter::AddBuff(const FBuffStruct& Buff)
 void ASlimeCharacter::OnEat(const float SizeIncrease)
 {
 	BaseSize += SizeIncrease * SizeFactor;
-	const float Scale = BaseSize * SizeMultiplier;
+	Scale = BaseSize * SizeMultiplier;
 	SpringArmLength = 100 * Scale + 300; // og radius * scale + some number to keep spring arm constant distance from slime surface
-	SetActorScale3D(FVector(Scale, Scale, Scale));
 }
 
 void ASlimeCharacter::BeginPlay()
@@ -108,13 +107,13 @@ void ASlimeCharacter::Tick(const float DeltaTime)
 			);
 	}
 
-	if (GetActorScale() == FVector(Scale, Scale, Scale))
+	if (GetActorScale() != FVector(Scale, Scale, Scale))
 	{
 		// can use any x,y,z of actor scale since should be kept uniform
 		const float ScaleInterop = FMath::FInterpTo(GetActorScale().X,
 			Scale,
 			DeltaTime,
-			0.1f
+			5.f
 			);
 		SetActorScale3D(FVector(ScaleInterop, ScaleInterop, ScaleInterop));
 	}
@@ -158,7 +157,7 @@ void ASlimeCharacter::RemoveBuff(const EBuffTypes BuffType)
 			case EBuffTypes::Speed: GetCharacterMovement()->MaxWalkSpeed /= CurrentBuffs[i].Multiplier; break;
 			case EBuffTypes::Size: 
 				SizeMultiplier /= CurrentBuffs[i].Multiplier;
-				SetActorScale3D(FVector(BaseSize, BaseSize, BaseSize));
+				Scale = BaseSize;
 				break;
 			case EBuffTypes::IncreaseSizeFromBuildings:
 				SizeFactor /= CurrentBuffs[i].Multiplier;
