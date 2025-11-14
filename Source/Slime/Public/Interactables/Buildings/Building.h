@@ -30,6 +30,13 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings")
 	float SizeIncrease;
 
-	// possible buffs
+	// buff drop
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
 	TArray<TSubclassOf<ABuff>> Buffs;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
+	float BuffDropRate = .1f;
+
+	UFUNCTION()
+	void DropBuff();
 };
