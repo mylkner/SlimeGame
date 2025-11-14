@@ -59,7 +59,6 @@ void ASlimeCharacter::AddBuff(const FBuffStruct& Buff)
 		Scale = BaseSize * SizeMultiplier;
 		break;
 	}
-	UE_LOG(LogTemp, Warning, TEXT("Buff added"));
 	CurrentBuffs.Add(Buff);
 }
 

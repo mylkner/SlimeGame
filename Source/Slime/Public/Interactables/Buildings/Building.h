@@ -6,6 +6,8 @@
 #include "Slime/Public/Interactables/Interactable.h"
 #include "Building.generated.h"
 
+class ABuff;
+
 UCLASS()
 class SLIME_API ABuilding : public AInteractable
 {
@@ -27,4 +29,14 @@ protected:
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings")
 	float SizeIncrease;
+
+	// buff drop
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
+	TArray<TSubclassOf<ABuff>> Buffs;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
+	float BuffDropRate = .1f;
+
+	UFUNCTION()
+	void DropBuff();
 };
