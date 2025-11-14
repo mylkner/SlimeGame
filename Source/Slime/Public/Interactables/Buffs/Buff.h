@@ -36,4 +36,7 @@ private:
 
 	UFUNCTION()
 	void Add(const FVector& NewLocation);
+
+	// stop dupes
+	bool bUsed = false;
 };

@@ -3,8 +3,13 @@
 
 #include "Slime/Public/Interactables/Buildings/Building.h"
 
+#include "Characters/SlimeCharacter.h"
+
 ABuilding::ABuilding()
 {
+	MinSizeToEat = 1.1;
+	SizeFactor = 10;
+	SizeIncrease = MinSizeToEat / SizeFactor;
 }
 
 void ABuilding::BeginPlay()
@@ -14,6 +19,8 @@ void ABuilding::BeginPlay()
 
 void ABuilding::Interact(ASlimeCharacter* Slime)
 {
-	UE_LOG(LogTemp, Warning, TEXT("I'm a building"));
+	if (Slime->GetSize() < MinSizeToEat) return;
+	Slime->OnEat(SizeIncrease);
+	Destroy();
 }
 

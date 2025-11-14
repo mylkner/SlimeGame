@@ -24,7 +24,7 @@ ASlimeCharacter::ASlimeCharacter()
 	
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(RootComponent);
-	SpringArm->TargetArmLength = 300;
+	SpringArm->TargetArmLength = SpringArmLength;
 	SpringArm->bUsePawnControlRotation = true;
 
 	ViewCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
@@ -32,6 +32,7 @@ ASlimeCharacter::ASlimeCharacter()
 
 	GetCharacterMovement()->MaxWalkSpeed = BaseSpeed;
 	GetCharacterMovement()->JumpZVelocity = BaseJumpHeight;
+	SetActorScale3D(FVector(BaseSize, BaseSize, BaseSize));
 }
 
 void ASlimeCharacter::AddBuff(const FBuffStruct& Buff)
@@ -47,13 +48,27 @@ void ASlimeCharacter::AddBuff(const FBuffStruct& Buff)
 	
 	switch (Buff.Type)
 	{
-		case EBuffTypes::Jump: GetCharacterMovement()->JumpZVelocity *= Buff.Multiplier; break;
-		case EBuffTypes::Speed: GetCharacterMovement()->MaxWalkSpeed *= Buff.Multiplier; break;
-		case EBuffTypes::Size: SetActorScale3D(FVector(SizeMultiplier, SizeMultiplier, SizeMultiplier));; break;
+	case EBuffTypes::Jump: GetCharacterMovement()->JumpZVelocity *= Buff.Multiplier; break;
+	case EBuffTypes::Speed: GetCharacterMovement()->MaxWalkSpeed *= Buff.Multiplier; break;
+	case EBuffTypes::IncreaseSizeFromBuildings:
+		SizeFactor *= Buff.Multiplier;
+		break;
+	case EBuffTypes::Size:
+		SizeMultiplier *= Buff.Multiplier;
+		const float Scale = BaseSize * SizeMultiplier;
+		SetActorScale3D(FVector(Scale, Scale, Scale));
+		break;
 	}
-	
+	UE_LOG(LogTemp, Warning, TEXT("Buff added"));
 	CurrentBuffs.Add(Buff);
-	if (CurrentBuffs.Num() == 1) SetActorTickEnabled(true);
+}
+
+void ASlimeCharacter::OnEat(const float SizeIncrease)
+{
+	BaseSize += SizeIncrease * SizeFactor;
+	const float Scale = BaseSize * SizeMultiplier;
+	SpringArmLength = 100 * Scale + 300; // og radius * scale + some number to keep spring arm constant distance from slime surface
+	SetActorScale3D(FVector(Scale, Scale, Scale));
 }
 
 void ASlimeCharacter::BeginPlay()
@@ -83,7 +98,12 @@ void ASlimeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 void ASlimeCharacter::Tick(const float DeltaTime)
 {
-	if (CurrentBuffs.Num() == 0) SetActorTickEnabled(false);
+	SpringArm->TargetArmLength = FMath::FInterpTo(
+		SpringArm->TargetArmLength,
+		SpringArmLength,
+		DeltaTime,
+		1.0f
+		);
 
 	for (int i = CurrentBuffs.Num() - 1; i >= 0; i--)
 	{
@@ -120,9 +140,15 @@ void ASlimeCharacter::RemoveBuff(const EBuffTypes BuffType)
 		{
 			switch (BuffType)
 			{
-				case EBuffTypes::Jump: GetCharacterMovement()->JumpZVelocity /= CurrentBuffs[i].Multiplier; break;
-				case EBuffTypes::Speed: GetCharacterMovement()->MaxWalkSpeed /= CurrentBuffs[i].Multiplier; break;
-				case EBuffTypes::Size: SetActorScale3D(FVector(1, 1, 1));; break;
+			case EBuffTypes::Jump: GetCharacterMovement()->JumpZVelocity /= CurrentBuffs[i].Multiplier; break;
+			case EBuffTypes::Speed: GetCharacterMovement()->MaxWalkSpeed /= CurrentBuffs[i].Multiplier; break;
+			case EBuffTypes::Size: 
+				SizeMultiplier /= CurrentBuffs[i].Multiplier;
+				SetActorScale3D(FVector(BaseSize, BaseSize, BaseSize));
+				break;
+			case EBuffTypes::IncreaseSizeFromBuildings:
+				SizeFactor /= CurrentBuffs[i].Multiplier;
+				break;
 			}
 			CurrentBuffs.RemoveAt(i);
 		}

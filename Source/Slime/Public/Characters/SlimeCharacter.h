@@ -26,6 +26,7 @@ public:
 
 	UFUNCTION()
 	void AddBuff(const FBuffStruct& Buff);
+	void OnEat(const float SizeIncrease);
 
 protected:
 	virtual void BeginPlay() override;
@@ -65,19 +66,22 @@ private:
 	// stats/multipliers
 	const float BaseSpeed = 700;
 	const float BaseJumpHeight = 500;
+	float BaseSize = 1.0f;
+	float SpringArmLength = 300.0f;
 
 	UPROPERTY(VisibleAnywhere)
-	float SpeedMultiplier = 1.0f;
+	float SizeMultiplier = 1.0f;
 
 	UPROPERTY(VisibleAnywhere)
-	float JumpMultiplier = 1.0f;
-
-	UPROPERTY(VisibleAnywhere)
-	float SizeMultiplier = 1.1f;
+	float SizeFactor = 1.0f;
 
 	// buffs
 	TArray<FBuffStruct> CurrentBuffs = TArray<FBuffStruct>();
 
 	UFUNCTION()
 	void RemoveBuff(EBuffTypes BuffType);
+
+public:
+	// getters/setters
+	FORCEINLINE float GetSize() { return BaseSize * SizeMultiplier; } 
 };

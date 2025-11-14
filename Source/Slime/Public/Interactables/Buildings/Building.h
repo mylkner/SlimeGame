@@ -17,4 +17,14 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void Interact(ASlimeCharacter* Slime) override;
+
+	// props
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings")
+	float MinSizeToEat;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings")
+	float SizeFactor;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings")
+	float SizeIncrease;
 };

@@ -21,8 +21,9 @@ void ABuff::BeginPlay()
 
 void ABuff::Interact(ASlimeCharacter* Slime)
 {
-	UE_LOG(LogTemp, Warning, TEXT("I'm a buff"));
-
+	if (bUsed) return;
+	bUsed = true;
+	
 	FBuffStruct Buff;
 	Buff.Type = BuffType;
 	Buff.Multiplier = Multiplier;
