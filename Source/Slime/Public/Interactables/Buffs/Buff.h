@@ -17,7 +17,18 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaTime) override;
 	virtual void Interact(ASlimeCharacter* Slime) override;
+
+	// float effects
+	UFUNCTION(BlueprintPure, Category = "FloatEffect")
+	float TransformedSin();
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "FloatEffects")
+	float Amplitude = .25f;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "FloatEffects")
+	float PeriodFactor = 2.f;
 	
 	// properties
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
@@ -30,13 +41,9 @@ protected:
 	float Duration = 15.0f;
 
 private:
-	// remove/add from game
-	UFUNCTION()
-	void Remove();
-
-	UFUNCTION()
-	void Add(const FVector& NewLocation);
-
 	// stop dupes
 	bool bUsed = false;
+
+	// for float effect
+	float RunningTime = 0;
 };

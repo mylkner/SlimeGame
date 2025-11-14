@@ -67,6 +67,7 @@ private:
 	const float BaseSpeed = 700;
 	const float BaseJumpHeight = 500;
 	float BaseSize = 1.0f;
+	float Scale;
 	float SpringArmLength = 300.0f;
 
 	UPROPERTY(VisibleAnywhere)

@@ -98,12 +98,26 @@ void ASlimeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 void ASlimeCharacter::Tick(const float DeltaTime)
 {
-	SpringArm->TargetArmLength = FMath::FInterpTo(
-		SpringArm->TargetArmLength,
-		SpringArmLength,
-		DeltaTime,
-		1.0f
-		);
+	if (SpringArm->TargetArmLength != SpringArmLength)
+	{
+		SpringArm->TargetArmLength = FMath::FInterpTo(
+			SpringArm->TargetArmLength,
+			SpringArmLength,
+			DeltaTime,
+			1.0f
+			);
+	}
+
+	if (GetActorScale() == FVector(Scale, Scale, Scale))
+	{
+		// can use any x,y,z of actor scale since should be kept uniform
+		const float ScaleInterop = FMath::FInterpTo(GetActorScale().X,
+			Scale,
+			DeltaTime,
+			0.1f
+			);
+		SetActorScale3D(FVector(ScaleInterop, ScaleInterop, ScaleInterop));
+	}
 
 	for (int i = CurrentBuffs.Num() - 1; i >= 0; i--)
 	{

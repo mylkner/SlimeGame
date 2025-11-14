@@ -9,6 +9,7 @@
 
 ABuff::ABuff()
 {
+	PrimaryActorTick.bCanEverTick = true;
 	BuffType = EBuffTypes::Speed;
 	StaticMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	ContactSphere->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
@@ -18,6 +19,16 @@ void ABuff::BeginPlay()
 {
 	Super::BeginPlay();
 }
+
+void ABuff::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	RunningTime += DeltaTime;
+	AddActorWorldRotation(FRotator(0, 50.f*DeltaTime, 0));
+	AddActorWorldOffset(FVector(0, 0, TransformedSin()));
+}
+
 
 void ABuff::Interact(ASlimeCharacter* Slime)
 {
@@ -31,20 +42,12 @@ void ABuff::Interact(ASlimeCharacter* Slime)
 	Buff.TimeRemaining = Duration;
 
 	Slime->AddBuff(Buff);
-	Remove();
+	Destroy();
 }
 
-void ABuff::Remove()
+float ABuff::TransformedSin()
 {
-	SetActorEnableCollision(false);
-	SetActorHiddenInGame(true);
-}
-
-void ABuff::Add(const FVector& NewLocation )
-{
-	SetActorLocation(NewLocation);
-	SetActorEnableCollision(true);
-	SetActorHiddenInGame(false);
+	return Amplitude * FMath::Sin(RunningTime*PeriodFactor);
 }
 
 
