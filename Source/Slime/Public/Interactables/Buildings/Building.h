@@ -35,7 +35,7 @@ protected:
 	TArray<TSubclassOf<ABuff>> Buffs;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
-	float BuffDropRate = .1f;
+	float BuffDropRate = .15f;
 
 	UFUNCTION()
 	void DropBuff();
