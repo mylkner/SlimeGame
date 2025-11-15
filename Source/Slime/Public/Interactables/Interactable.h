@@ -7,12 +7,12 @@
 #include "Interactable.generated.h"
 
 class ASlimeCharacter;
-class USphereComponent;
+class UBoxComponent;
 
 UCLASS(Abstract)
 class SLIME_API AInteractable : public AActor
 {
-	GENERATED_BODY()
+	GENERATED_BODY() 
 
 public:
 	explicit AInteractable();
@@ -34,7 +34,7 @@ protected:
 	TObjectPtr<UStaticMeshComponent> StaticMesh;
 
 	UPROPERTY(VisibleAnywhere)
-	TObjectPtr<USphereComponent> ContactSphere;
+	TObjectPtr<UBoxComponent> ContactBox;
 
 	UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category = "Interactable")
 	float ContactSphereRadius = 100.0f;
