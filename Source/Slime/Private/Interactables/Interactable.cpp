@@ -15,7 +15,7 @@ AInteractable::AInteractable()
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
 	StaticMesh->SetupAttachment(RootComponent);
 
-	ContactBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Sphere"));
+	ContactBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
 	ContactBox->SetupAttachment(RootComponent);
 	ContactBox->SetBoxExtent(FVector(20.0f, 20.0f, 20.0f));
 	ContactBox->SetCollisionProfileName("OverlapAllDynamic");
