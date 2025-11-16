@@ -18,9 +18,6 @@ ASlimeCharacter::ASlimeCharacter()
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 	GetCharacterMovement()->bOrientRotationToMovement = true;
-
-	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
-	StaticMesh->SetupAttachment(RootComponent);
 	
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(RootComponent);
