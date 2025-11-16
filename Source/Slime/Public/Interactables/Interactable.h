@@ -35,7 +35,4 @@ protected:
 
 	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<UBoxComponent> ContactBox;
-
-	UPROPERTY(EditInstanceOnly, BlueprintReadOnly, Category = "Interactable")
-	float ContactBoxRadius = 100.0f;
 };

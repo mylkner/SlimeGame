@@ -55,9 +55,6 @@ public:
 private:
 	// components
 	UPROPERTY(VisibleAnywhere)
-	TObjectPtr<UStaticMeshComponent> StaticMesh;
-	
-	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<USpringArmComponent> SpringArm = nullptr;
 
 	UPROPERTY(VisibleAnywhere)
