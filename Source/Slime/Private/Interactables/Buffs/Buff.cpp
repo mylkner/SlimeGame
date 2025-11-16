@@ -13,6 +13,7 @@ ABuff::ABuff()
 	BuffType = EBuffTypes::Speed;
 	StaticMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	ContactBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	ContactBox->SetBoxExtent(FVector(100, 100, 100));
 }
 
 void ABuff::BeginPlay()
