@@ -10,11 +10,11 @@ void USlimeAnim::NativeInitializeAnimation()
 {
 	Super::NativeInitializeAnimation();
 
-	// Slime = Cast<ASlimeCharacter>(TryGetPawnOwner());
-	// if (Slime)
-	// {
-	// 	SlimeMovement = Slime->GetCharacterMovement();
-	// }
+	Slime = Cast<ASlimeCharacter>(TryGetPawnOwner());
+	if (Slime)
+	{
+		SlimeMovement = Slime->GetCharacterMovement();
+	}
 }
 
 void USlimeAnim::NativeUpdateAnimation(float DeltaSeconds)
