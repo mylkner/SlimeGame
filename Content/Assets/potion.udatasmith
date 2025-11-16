@@ -1,0 +1,194 @@
+<DatasmithUnrealScene>
+	<Version>0.24</Version>
+	<SDKVersion>5.7.0-47537391</SDKVersion>
+	<Host>Autodesk 3dsmax 27.0.4918Arnold</Host>
+	<Application Vendor="Autodesk" ProductName="3dsmax" ProductVersion="27.0.4918"/>
+	<ResourcePath>C:/Users/DFlin/Desktop/game design repo/SlimeGame/Content/Assets</ResourcePath>
+	<User ID="f4edd29e40647c1158f055860705045f" OS="Windows 8"/>
+	<Geolocation/>
+	<StaticMesh name="3" label="Sphere002">
+		<file path="potion_Assets/3.udsmesh"/>
+		<Size a="76340.320312" x="143.684097" y="143.684097" z="187.087219"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="ed415979aeb2c3feb09add9861e58a3b"/>
+		<Material id="1" name="Material__25"/>
+		<Material id="2" name="Material__37"/>
+	</StaticMesh>
+	<ActorMesh name="3" label="Sphere002" layer="0" mobility="Static">
+		<mesh name="3"/>
+		<Transform tx="279.399994" ty="0.0" tz="0.0" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+		<tag value="Max.superclassof: GeometryClass" />
+		<tag value="Max.classof: PolyMeshObject" />
+		<tag value="Max.handle: 3" />
+		<tag value="Max.isGroupHead: false" />
+		<tag value="Max.isGroupMember: false" />
+		<tag value="Max.parent.handle: 0" />
+	</ActorMesh>
+	<UEPbrMaterial name="Material__25">
+		<Expressions>
+			<Scalar Name="" constant="0.61"/>
+			<Color Name="Diffuse_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Color Name="" constant="(R=0.395963,G=0.692936,B=0.830000,A=0.830000)"/>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="5" OutputIndex="0"/>
+				<Input Name="1" expression="4" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+			<Desaturation Name="">
+				<Input Name="0" expression="3" OutputIndex="0"/>
+			</Desaturation>
+			<OneMinus Name="">
+				<Input Name="0" expression="9" OutputIndex="0"/>
+			</OneMinus>
+			<Color Name="Clear_Coat" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Scalar Name="" constant="0.1"/>
+			<Multiply Name="">
+				<Input Name="0" expression="11" OutputIndex="0"/>
+				<Input Name="1" expression="12" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="1.5"/>
+			<Scalar Name="" constant="0.0"/>
+			<Scalar Name="" constant="0.0"/>
+			<Scalar Name="" constant="1.0"/>
+			<Fresnel Name="">
+				<Input Name="0" expression="17" OutputIndex="0"/>
+				<Input Name="1" expression="16" OutputIndex="0"/>
+			</Fresnel>
+			<OneMinus Name="">
+				<Input Name="0" expression="18" OutputIndex="0"/>
+			</OneMinus>
+			<Multiply Name="">
+				<Input Name="0" expression="19" OutputIndex="0"/>
+				<Input Name="1" expression="19" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="14" OutputIndex="0"/>
+				<Input Name="1" expression="14" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="15" OutputIndex="0"/>
+				<Input Name="1" expression="15" OutputIndex="0"/>
+			</Multiply>
+			<Add Name="">
+				<Input Name="0" expression="21" OutputIndex="0"/>
+				<Input Name="1" expression="22" OutputIndex="0"/>
+			</Add>
+			<Scalar Name="" constant="2.0"/>
+			<Multiply Name="">
+				<Input Name="0" expression="14" OutputIndex="0"/>
+				<Input Name="1" expression="24" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="25" OutputIndex="0"/>
+				<Input Name="1" expression="19" OutputIndex="0"/>
+			</Multiply>
+			<Subtract Name="">
+				<Input Name="0" expression="23" OutputIndex="0"/>
+				<Input Name="1" expression="26" OutputIndex="0"/>
+			</Subtract>
+			<Add Name="">
+				<Input Name="0" expression="27" OutputIndex="0"/>
+				<Input Name="1" expression="20" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="23" OutputIndex="0"/>
+				<Input Name="1" expression="26" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="29" OutputIndex="0"/>
+				<Input Name="1" expression="20" OutputIndex="0"/>
+			</Add>
+			<Divide Name="">
+				<Input Name="0" expression="28" OutputIndex="0"/>
+				<Input Name="1" expression="30" OutputIndex="0"/>
+			</Divide>
+			<Multiply Name="">
+				<Input Name="0" expression="23" OutputIndex="0"/>
+				<Input Name="1" expression="20" OutputIndex="0"/>
+			</Multiply>
+			<Subtract Name="">
+				<Input Name="0" expression="32" OutputIndex="0"/>
+				<Input Name="1" expression="26" OutputIndex="0"/>
+			</Subtract>
+			<Scalar Name="" constant="1.0"/>
+			<Add Name="">
+				<Input Name="0" expression="33" OutputIndex="0"/>
+				<Input Name="1" expression="34" OutputIndex="0"/>
+			</Add>
+			<Add Name="">
+				<Input Name="0" expression="32" OutputIndex="0"/>
+				<Input Name="1" expression="26" OutputIndex="0"/>
+			</Add>
+			<Scalar Name="" constant="1.0"/>
+			<Add Name="">
+				<Input Name="0" expression="36" OutputIndex="0"/>
+				<Input Name="1" expression="37" OutputIndex="0"/>
+			</Add>
+			<Divide Name="">
+				<Input Name="0" expression="35" OutputIndex="0"/>
+				<Input Name="1" expression="38" OutputIndex="0"/>
+			</Divide>
+			<Scalar Name="" constant="0.5"/>
+			<Add Name="">
+				<Input Name="0" expression="39" OutputIndex="0"/>
+				<Input Name="1" expression="31" OutputIndex="0"/>
+			</Add>
+			<Multiply Name="">
+				<Input Name="0" expression="41" OutputIndex="0"/>
+				<Input Name="1" expression="40" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.5"/>
+			<Power Name="">
+				<Input Name="0" expression="42" OutputIndex="0"/>
+				<Input Name="1" expression="43" OutputIndex="0"/>
+			</Power>
+			<LinearInterpolate Name="">
+				<Input Name="0" expression="13" OutputIndex="0"/>
+				<Input Name="1" expression="11" OutputIndex="0"/>
+				<Input Name="2" expression="44" OutputIndex="0"/>
+			</LinearInterpolate>
+			<Scalar Name="Clear_Coat_Roughness" constant="0.0"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="7" OutputIndex="0"/>
+		<Input Name="Roughness" expression="8" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="6" OutputIndex="0"/>
+		<Input Name="Opacity" expression="10" OutputIndex="0"/>
+		<Input Name="ClearCoat" expression="45" OutputIndex="0"/>
+		<Input Name="ClearCoatRoughness" expression="46" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+		<ShadingModel value="ClearCoat"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__37">
+		<Expressions>
+			<Scalar Name="" constant="0.7"/>
+			<Color Name="Diffuse_Color" constant="(R=0.404448,G=0.339428,B=0.197863,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="4" OutputIndex="0"/>
+				<Input Name="1" expression="3" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="6" OutputIndex="0"/>
+		<Input Name="Roughness" expression="7" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="5" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<Export Duration="0"/>
+</DatasmithUnrealScene>
