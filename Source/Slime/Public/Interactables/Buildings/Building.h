@@ -31,9 +31,12 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings")
 	float SizeIncrease;
 	
-	// particle effects
+	// effects
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings|Effects")
 	TObjectPtr<UNiagaraSystem> EatEffect = nullptr;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings|Effects")
+	TObjectPtr<USoundBase> EatSound = nullptr;
 
 	// buff drop
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")
