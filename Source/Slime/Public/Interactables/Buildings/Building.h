@@ -7,6 +7,7 @@
 #include "Building.generated.h"
 
 class ABuff;
+class UNiagaraSystem;
 
 UCLASS()
 class SLIME_API ABuilding : public AInteractable
@@ -29,6 +30,10 @@ protected:
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings")
 	float SizeIncrease;
+	
+	// particle effects
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buildings|Effects")
+	TObjectPtr<UNiagaraSystem> EatEffect = nullptr;
 
 	// buff drop
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Buffs")

@@ -2,7 +2,7 @@
 
 
 #include "Slime/Public/Interactables/Buildings/Building.h"
-
+#include "NiagaraFunctionLibrary.h"
 #include "Characters/SlimeCharacter.h"
 #include "Interactables/Buffs/Buff.h"
 
@@ -26,6 +26,11 @@ void ABuilding::Interact(ASlimeCharacter* Slime)
 		DropBuff();
 	
 	Slime->OnEat(SizeIncrease);
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(
+		GetWorld(),
+		EatEffect,
+		GetActorLocation(),
+		GetActorRotation());
 	Destroy();
 }
 
