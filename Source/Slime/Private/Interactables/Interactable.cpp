@@ -3,7 +3,7 @@
 
 #include "Slime/Public/Interactables/Interactable.h"
 
-#include "Components/SphereComponent.h"
+#include "Components/BoxComponent.h"
 #include "Slime/Public/Characters/SlimeCharacter.h"
 
 
@@ -15,17 +15,17 @@ AInteractable::AInteractable()
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
 	StaticMesh->SetupAttachment(RootComponent);
 
-	ContactSphere = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere"));
-	ContactSphere->SetupAttachment(RootComponent);
-	ContactSphere->SetSphereRadius(ContactSphereRadius);
-	ContactSphere->SetCollisionProfileName("OverlapAllDynamic");
+	ContactBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
+	ContactBox->SetupAttachment(RootComponent);
+	ContactBox->SetBoxExtent(FVector(20.0f, 20.0f, 20.0f));
+	ContactBox->SetCollisionProfileName("OverlapAllDynamic");
 }
 
 void AInteractable::BeginPlay()
 {
 	Super::BeginPlay();
 
-	ContactSphere->OnComponentBeginOverlap.AddDynamic(this, &AInteractable::OnSphereOverlap);
+	ContactBox->OnComponentBeginOverlap.AddDynamic(this, &AInteractable::OnSphereOverlap);
 }
 
 

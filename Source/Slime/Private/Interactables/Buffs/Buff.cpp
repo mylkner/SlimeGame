@@ -3,7 +3,7 @@
 
 #include "Slime/Public/Interactables/Buffs/Buff.h"
 
-#include "Components/SphereComponent.h"
+#include "Components/BoxComponent.h"
 #include "Interactables/Buffs/BuffStruct.h"
 #include "Slime/Public/Characters/SlimeCharacter.h"
 
@@ -12,7 +12,7 @@ ABuff::ABuff()
 	PrimaryActorTick.bCanEverTick = true;
 	BuffType = EBuffTypes::Speed;
 	StaticMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-	ContactSphere->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	ContactBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 }
 
 void ABuff::BeginPlay()
