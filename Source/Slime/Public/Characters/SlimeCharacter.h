@@ -55,9 +55,6 @@ public:
 private:
 	// components
 	UPROPERTY(VisibleAnywhere)
-	TObjectPtr<UStaticMeshComponent> StaticMesh;
-	
-	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<USpringArmComponent> SpringArm = nullptr;
 
 	UPROPERTY(VisibleAnywhere)
@@ -68,7 +65,7 @@ private:
 	const float BaseJumpHeight = 500;
 	float BaseSize = 1.0f;
 	float Scale;
-	float SpringArmLength = 300.0f;
+	float SpringArmLength = 500.0f;
 
 	UPROPERTY(VisibleAnywhere)
 	float SizeMultiplier = 1.0f;

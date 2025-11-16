@@ -18,9 +18,6 @@ ASlimeCharacter::ASlimeCharacter()
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 	GetCharacterMovement()->bOrientRotationToMovement = true;
-
-	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMesh"));
-	StaticMesh->SetupAttachment(RootComponent);
 	
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(RootComponent);
@@ -66,7 +63,7 @@ void ASlimeCharacter::OnEat(const float SizeIncrease)
 {
 	BaseSize += SizeIncrease * SizeFactor;
 	Scale = BaseSize * SizeMultiplier;
-	SpringArmLength = 100 * Scale + 300; // og radius * scale + some number to keep spring arm constant distance from slime surface
+	SpringArmLength = 100 * Scale + 500; // og radius * scale + some number to keep spring arm constant distance from slime surface
 }
 
 void ASlimeCharacter::BeginPlay()

@@ -29,7 +29,7 @@ void ABuilding::Interact(ASlimeCharacter* Slime)
 	UNiagaraFunctionLibrary::SpawnSystemAtLocation(
 		GetWorld(),
 		EatEffect,
-		GetActorLocation(),
+		GetActorLocation() + FVector(0, 0, 50),
 		GetActorRotation());
 	Destroy();
 }
@@ -40,7 +40,7 @@ void ABuilding::DropBuff()
 	
 	GetWorld()->SpawnActor<ABuff>(
 		ChosenBuff,
-		GetActorLocation() + FVector(0, 1000, 10),
+		GetActorLocation() + FVector(FMath::RandRange(0, 1000), FMath::RandRange(0, 1000), 100),
 		FRotator::ZeroRotator);
 }
 
