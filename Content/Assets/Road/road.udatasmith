@@ -1,0 +1,80 @@
+<DatasmithUnrealScene>
+	<Version>0.24</Version>
+	<SDKVersion>5.7.0-47537391</SDKVersion>
+	<Host>Autodesk 3dsmax 27.0.4918Arnold</Host>
+	<Application Vendor="Autodesk" ProductName="3dsmax" ProductVersion="27.0.4918"/>
+	<ResourcePath>C:/Users/DFlin/Desktop/game design repo/SlimeGame/Content/Assets/Road</ResourcePath>
+	<User ID="f4edd29e40647c1158f055860705045f" OS="Windows 8"/>
+	<Geolocation/>
+	<StaticMesh name="2" label="Box001">
+		<file path="road_Assets/2.udsmesh"/>
+		<Size a="5691.907227" x="50.799995" y="50.799999" z="3.687584"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="edb9f0843e640b0b684dff9b974013ba"/>
+		<Material id="1" name="Material__38"/>
+		<Material id="2" name="Material__50"/>
+	</StaticMesh>
+	<ActorMesh name="2" label="Box001" layer="0" mobility="Static">
+		<mesh name="2"/>
+		<Transform tx="0.0" ty="0.0" tz="0.0" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex64="000000000000008000000000000000000000000000000080000000000000F03F"/>
+		<tag value="Max.superclassof: GeometryClass" />
+		<tag value="Max.classof: PolyMeshObject" />
+		<tag value="Max.handle: 2" />
+		<tag value="Max.isGroupHead: false" />
+		<tag value="Max.isGroupMember: false" />
+		<tag value="Max.parent.handle: 0" />
+	</ActorMesh>
+	<UEPbrMaterial name="Material__38">
+		<Expressions>
+			<Scalar Name="" constant="0.7"/>
+			<Color Name="Diffuse_Color" constant="(R=0.212231,G=0.212231,B=0.212231,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="4" OutputIndex="0"/>
+				<Input Name="1" expression="3" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Color Name="Specular" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Desaturation Name="">
+				<Input Name="0" expression="7" OutputIndex="0"/>
+			</Desaturation>
+			<Scalar Name="" constant="0.7"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="6" OutputIndex="0"/>
+		<Input Name="Roughness" expression="9" OutputIndex="0"/>
+		<Input Name="Specular" expression="8" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="5" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<UEPbrMaterial name="Material__50">
+		<Expressions>
+			<Scalar Name="" constant="0.7"/>
+			<Color Name="Diffuse_Color" constant="(R=0.878278,G=0.880802,B=0.236874,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+				<Input Name="1" expression="0" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="" constant="0.0"/>
+			<Color Name="Emissive_Color" constant="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"/>
+			<Multiply Name="">
+				<Input Name="0" expression="4" OutputIndex="0"/>
+				<Input Name="1" expression="3" OutputIndex="0"/>
+			</Multiply>
+			<Scalar Name="Metallic" constant="0.0"/>
+			<Scalar Name="" constant="0.75"/>
+		</Expressions>
+		<Input Name="BaseColor" expression="2" OutputIndex="0"/>
+		<Input Name="Metallic" expression="6" OutputIndex="0"/>
+		<Input Name="Roughness" expression="7" OutputIndex="0"/>
+		<Input Name="EmissiveColor" expression="5" OutputIndex="0"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<Export Duration="0"/>
+</DatasmithUnrealScene>
