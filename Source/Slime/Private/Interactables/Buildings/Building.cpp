@@ -3,6 +3,7 @@
 
 #include "Slime/Public/Interactables/Buildings/Building.h"
 #include "NiagaraFunctionLibrary.h"
+#include "Kismet/GameplayStatics.h"
 #include "Characters/SlimeCharacter.h"
 #include "Interactables/Buffs/Buff.h"
 
@@ -31,6 +32,7 @@ void ABuilding::Interact(ASlimeCharacter* Slime)
 		EatEffect,
 		GetActorLocation() + FVector(0, 0, 50),
 		GetActorRotation());
+	UGameplayStatics::PlaySoundAtLocation(GetWorld(), EatSound, GetActorLocation());
 	Destroy();
 }
 
